@@ -5,7 +5,7 @@ A microlibrary API to use Web Storage, with a fallback to cookies when not suppo
 
 ### Purpose
 
-While localStorage and sessionStorage come a long way towards a more workable in-browser storage environment, they have some limitations as a nature of their type. They only store strings, they are separate entities, and worst of all ... they aren't universally supported! IE7 and below, and certain mobile browsers (-cough- Opera Mini -cough-) don't use them. So this API was built with the idea that you could have one, unified interface for all forms of storage.
+While localStorage and sessionStorage come a long way towards a more workable in-browser storage environment, they have some limitations as a nature of their type. They only store strings, they are separate entities, and worst of all ... they aren't universally supported! IE7 and below, and certain mobile browsers (-cough- Opera Mini -cough-) don't use them. So this API was built with the idea that you could have one, unified interface for all forms of storage. Plus, all the items you are working with are object-based, which makes them much easier to add / remove / modify (especially in cookieland).
 
 ### Size
 
