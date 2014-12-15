@@ -22,7 +22,7 @@ Much like the .ajax() method in jQuery, everything passed here is through an obj
 + type (string, optional)
 + data (string / array / object, optional)
 
-Notice everything is optional ... if you pass nothing in, it defaults to returning an object of all storage types.
+Notice everything is optional ... if you pass nothing in, it defaults to the *get* action, returning an object of all items.
 
 **action**
 
