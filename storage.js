@@ -396,7 +396,29 @@
 				
 				break;
 			case 'string':
-				prv_removeStorage(obj,type);
+				switch(obj){
+					case 'local':
+					case 'session':
+						for(var key in webStorage[obj]){
+							prv_removeStorage(key);
+						}
+						
+						break;
+					default:
+						prv_removeStorage(obj,type);
+						
+						break;
+				}
+				
+				break;
+			case 'undefined':
+				for(var key in webStorage['local']){
+					prv_removeStorage(key);
+				}
+				
+				for(var key in webStorage['session']){
+					prv_removeStorage(key);
+				}
 				
 				break;
 			default:
