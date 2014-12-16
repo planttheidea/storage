@@ -11,9 +11,9 @@ There are two versions available, the standard version (which is library-agnosti
 
 ### Size
 
-+ Uncompressed: 8.24KB
-+ Minified: 4.09KB
-+ Minified and gzipped: 1.37KB
++ Uncompressed: 8.88KB
++ Minified: 4.11KB
++ Minified and gzipped: 1.39KB
 
 ### Use
 
