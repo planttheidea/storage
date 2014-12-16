@@ -13,9 +13,15 @@
  *
 */
 (function(window,document){
-	var getType = function(obj){
-			return Object.prototype.toString.call(obj).replace(/^\[object (.+)\]$/, "$1").toLowerCase();
-		},
+	var getType = (function(global){
+			return function(obj){
+				if(obj === global){
+					return 'global';
+				}
+				
+				return ({}).toString.call(obj).match(/\s([a-z|A-Z]+)/)[1].toLowerCase();
+			};
+		})(this),
 		canUse = {
 			localStorage:(function(){
 				try {
