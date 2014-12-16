@@ -1,7 +1,7 @@
 storage
 =======
 
-A microlibrary API to use Web Storage, with a fallback to cookies when not supported
+A microlibrary to unify current and legacy forms of Web Storage into a single, simple API
 
 ### Purpose
 
