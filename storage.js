@@ -14,12 +14,15 @@
 */
 (function(window,document){
 	var getType = (function(global){
+			var toString = ({}).toString,
+				re = /^.*\s(\w+).*$/;
+		
 			return function(obj){
 				if(obj === global){
 					return 'global';
 				}
 				
-				return ({}).toString.call(obj).match(/\s([a-z|A-Z]+)/)[1].toLowerCase();
+				return toString.call(obj).replace(re,'$1').toLowerCase();
 			};
 		})(this),
 		canUse = {
