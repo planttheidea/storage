@@ -19,12 +19,9 @@ There are two versions available, the standard version (which is library-agnosti
 
 The default storage type is localStorage and sessionStorage, however when these are not supported they will fall back to using cookies. To more accurately mirror the way that localStorage and sessionStorage work, the following cookie components will not be used:
 + domain
-+ boolean
++ secure
 
-Additionally, expiration settings are only applied for local:
-+ local = December 31, 9999
-
-In the future, I may add functionality to provide custom expiration dates as an enhancement, however localStorage does not natively support it so it was not in scope for this initial version.
+Additionally, expiration settings for cookies defined as *local*  are hard-coded as December 31, 9999. In the future, I may add functionality to provide custom expiration dates as an enhancement, however localStorage does not natively support it so it was not in scope for this initial version.
 
 ### Use
 
